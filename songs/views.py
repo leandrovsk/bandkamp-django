@@ -10,6 +10,7 @@ from rest_framework import generics
 
 class SongView(generics.ListCreateAPIView):
     authentication_classes = [JWTAuthentication]
+
     permission_classes = [IsAuthenticatedOrReadOnly]
 
     serializer_class = SongSerializer

@@ -5,7 +5,6 @@ from rest_framework.permissions import IsAuthenticatedOrReadOnly
 from .models import Song
 from rest_framework.pagination import PageNumberPagination
 from .serializers import SongSerializer
-from albums.models import Album
 from rest_framework import generics
 
 
